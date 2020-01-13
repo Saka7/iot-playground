@@ -7,7 +7,7 @@
 
 ## MQTT CONSUMER
 
-Simple nodejs server runs on port 3000.
+Simple nodejs mqtt consumer
 
 ## MQTT BROKER
 

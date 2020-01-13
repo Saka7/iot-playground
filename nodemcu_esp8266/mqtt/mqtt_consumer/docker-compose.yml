@@ -18,8 +18,6 @@ services:
     image: mqtt-consumer-app
     container_name: mqtt-consumer-app
     restart: always
-    ports:
-      - 3000:3000
     links:
         - mqtt-broker
     depends_on:
