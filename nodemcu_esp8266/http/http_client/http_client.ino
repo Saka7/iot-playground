@@ -5,7 +5,7 @@
 SoftwareSerial ESPserial(2, 3);
 HTTPClient http;
 
-const unsigned short MOTION_PIN_01 = D8;
+const unsigned short SENSOR_PIN_01 = D8;
 const unsigned short LED_PIN_01 = D1;
 
 const char* SSID = "<WIFI SID>";
@@ -14,6 +14,7 @@ const char* BASE_URL = "<HTTP SERVICE URL -> PROTOCOL://HOST:PORT>";
 
 unsigned short sensor_value = 0;
 
+// Serial monitor set-up for debugging
 void setup_esp_serial() {
   Serial.begin(9600);
   ESPserial.begin(115200);
@@ -70,8 +71,7 @@ String post_request(String path, String req_body) {
 }
 
 void loop() {
-  sensor_value = analogRead(MOTION_PIN_01);
-  Serial.println(sensor_value);
+  sensor_value = analogRead(SENSOR_PIN_01);
 
   if (sensor_value > 0) {
     const String req_body = "{\"target\": \"VALUE\"}";

@@ -19,6 +19,7 @@ MqttClient mqtt(wifiClient);
 
 unsigned short sensor_value = 0;
 
+// Serial monitor set-up for debugging
 void setup_esp_serial() {
   Serial.begin(9600);
   ESPserial.begin(115200);

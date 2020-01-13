@@ -3,7 +3,7 @@
 
 ## MQTT PUBLISER
 
-// TODO
+Sends sensor value to MQTT topic on sensor touch using [ArduinoMqttClient](https://github.com/arduino-libraries/ArduinoMqttClient) lib.
 
 ## MQTT CONSUMER
 
