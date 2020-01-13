@@ -1,0 +1,33 @@
+version: '3.3'
+
+services:
+
+  # MQTT-BROKER -> Eclipse Mosquitto
+  mqtt-broker:
+    image: 'eclipse-mosquitto:latest'
+    ports:
+      - '1883:1883'
+    networks:
+      - mqtt-net
+
+  # MQTT-CONSUMER -> NodeJS App
+  mqtt-consumer:
+    build:
+        context: ./
+        dockerfile: Dockerfile
+    image: mqtt-consumer-app
+    container_name: mqtt-consumer-app
+    restart: always
+    ports:
+      - 3000:3000
+    links:
+        - mqtt-broker
+    depends_on:
+        - mqtt-broker
+    networks:
+      - mqtt-net
+
+
+networks:
+  mqtt-net:
+    driver: bridge
