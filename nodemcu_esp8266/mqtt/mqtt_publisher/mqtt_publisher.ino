@@ -11,8 +11,8 @@ const char* MQTT_HOST = "<MQTT HOST>";
 const char* MQTT_TOPIC = "TOPIC_01"; // Default MQTT topic
 const unsigned short MQTT_PORT = 1883; // Default MQTT PORT
 
-const unsigned short SENSOR_PIN_01 = D8;
-const unsigned short LED_PIN_01 = D1;
+const unsigned short SENSOR_PIN_01 = 15; // D8
+const unsigned short LED_PIN_01 = 5; // D1
 
 WiFiClient wifiClient;
 MqttClient mqtt(wifiClient);

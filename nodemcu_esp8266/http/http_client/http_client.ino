@@ -5,8 +5,8 @@
 SoftwareSerial ESPserial(2, 3);
 HTTPClient http;
 
-const unsigned short SENSOR_PIN_01 = D8;
-const unsigned short LED_PIN_01 = D1;
+const unsigned short SENSOR_PIN_01 = 15; // D8
+const unsigned short LED_PIN_01 = 5; // D1
 
 const char* SSID = "<WIFI SID>";
 const char* WIFI_PASSWORD = "<WIFI PASSWORD>";

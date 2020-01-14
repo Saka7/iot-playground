@@ -5,6 +5,12 @@
 
 Sends sensor value to MQTT topic on sensor touch using [ArduinoMqttClient](https://github.com/arduino-libraries/ArduinoMqttClient) lib.
 
+```sh
+make install_boards # if not installed
+make compile
+make upload
+```
+
 ## MQTT CONSUMER
 
 Simple nodejs mqtt consumer
@@ -13,6 +19,8 @@ Simple nodejs mqtt consumer
 
 Eclipse Mosquitto MQTT broker runs on port 1883
 
+```sh
+docker-compose up -d
+```
 
-> `docker-compose up -d` - Run the app
 

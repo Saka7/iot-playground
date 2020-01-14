@@ -46,4 +46,20 @@ sudo chmod a+rw /dev/ttyUSB0
 - [http](nodemcu_esp8266/http/) - Simple JSON HTTP GET / POST requests via WiFi module (ESP8266);
 - [mqtt](nodemcu_esp8266/mqtt/) - Simple MQTT Publisher (IoT Device) / Consumer (NodeJS app) via WiFi module (ESP8266);
 
+### Pins
+
+```
+LED_BUILTIN = blue LED
+0 = D3
+1 = TX
+2 = blue LED
+3 = RX
+4 = D2
+5 = D1
+12 = D6
+13 = D7
+14 = D5
+15 = D8
+16 = D0
+```
 
