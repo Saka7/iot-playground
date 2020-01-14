@@ -15,6 +15,12 @@ make compile
 make uplaod
 ```
 
+Serial Monitor:
+
+```sh
+make serial_monitor
+```
+
 ## HTTP SERVER
 
 Simple express-based server runs on port 3000.

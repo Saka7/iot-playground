@@ -11,6 +11,12 @@ make compile
 make upload
 ```
 
+Serial Monitor:
+
+```sh
+make serial_monitor
+```
+
 ## MQTT CONSUMER
 
 Simple nodejs mqtt consumer
