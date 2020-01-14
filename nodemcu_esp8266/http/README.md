@@ -10,7 +10,7 @@ GPIO-s:
 - LED - D1
 
 ```sh
-make install_boards # if not installed
+make install_board # if not installed
 make compile
 make uplaod
 ```

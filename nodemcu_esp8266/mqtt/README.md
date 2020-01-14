@@ -6,7 +6,7 @@
 Sends sensor value to MQTT topic on sensor touch using [ArduinoMqttClient](https://github.com/arduino-libraries/ArduinoMqttClient) lib.
 
 ```sh
-make install_boards # if not installed
+make install_board # if not installed
 make compile
 make upload
 ```
