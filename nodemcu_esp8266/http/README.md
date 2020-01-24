@@ -18,7 +18,7 @@ make uplaod
 Serial Monitor:
 
 ```sh
-make serial_monitor
+make logs
 ```
 
 ## HTTP SERVER

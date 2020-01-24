@@ -7,7 +7,7 @@ compile:
 	arduino-cli compile --fqbn esp8266:esp8266:generic
 upload:
 	arduino-cli upload -p $(USB_LINK) --fqbn esp8266:esp8266:generic
-serial_monitor:
+logs:
 	busybox microcom -t 9600 $(USB_LINK)
 clean:
 	rm -rf *.elf *.bin

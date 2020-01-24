@@ -14,7 +14,7 @@ make upload
 Serial Monitor:
 
 ```sh
-make serial_monitor
+make logs
 ```
 
 ## MQTT CONSUMER

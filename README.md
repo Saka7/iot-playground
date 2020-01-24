@@ -8,7 +8,7 @@
 
 - Follow the [Arduino Cli](https://github.com/arduino/arduino-cli) documentation to install `arduino-cli` tool.
 
-- Add esp8266 repo to the inedx
+- Add esp8266 repo to the index
 
 ```sh
 arduino-cli core update-index --additional-urls https://arduino.esp8266.com/stable/package_esp8266com_index.json
