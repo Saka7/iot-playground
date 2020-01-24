@@ -43,6 +43,7 @@ sudo chmod a+rw /dev/ttyUSB0
 
 ### Projects
 
+- [base](nodemcu_esp8266/base/) - Basic Example (serial monitor);
 - [http](nodemcu_esp8266/http/) - Simple JSON HTTP GET / POST requests via WiFi module (ESP8266);
 - [mqtt](nodemcu_esp8266/mqtt/) - Simple MQTT Publisher (IoT Device) / Consumer (NodeJS app) via WiFi module (ESP8266);
 
