@@ -7,6 +7,8 @@ compile:
 	arduino-cli compile --fqbn esp8266:esp8266:generic
 upload:
 	arduino-cli upload -p $(USB_LINK) --fqbn esp8266:esp8266:generic
+permissions:
+	sudo chmod a+rw /dev/ttyUSB0
 logs:
 	busybox microcom $(USB_LINK)
 clean:
